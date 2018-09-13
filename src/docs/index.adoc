@@ -1,0 +1,55 @@
+= Bookstore API
+Version {project-version}
+:toc: left
+
+Provides services for managing bookstore resources.
+
+= Specification
+
+In addition to the documentation on this page, you can also download a spec file describing the API:
+
+* link:openapi-2.0.yml[Download as OpenAPI 2.0 YAML]
+
+[[resources]]
+= Resources
+
+[[resources-author]]
+== Author
+
+[[resources-get-all-authors]]
+=== Get all authors
+
+A `GET` request is used to retrieve all authors.
+
+operation::get-all-authors[snippets='curl-request,response-fields,http-response,links']
+
+[[resources-get-author-by-id]]
+=== Get author by ID
+
+A `GET` request is used to retrieve an author by ID.
+
+operation::get-author-by-id[snippets='curl-request,path-parameters,response-fields,http-response,links']
+
+[[resources-book]]
+== Book
+
+[[resources-get-all-books]]
+=== Get all books
+
+A `GET` request is used to retrieve all books.
+
+operation::get-all-books[snippets='curl-request,response-fields,http-response,links']
+
+[[resources-get-books-by-author]]
+=== Get books by author
+
+A `GET` request is used to retrieve books by author.
+
+operation::get-books-by-author[snippets='curl-request,request-parameters,response-fields,http-response,links']
+
+[[resources-get-book-by-id]]
+=== Get book by ID
+
+A `GET` request is used to retrieve an book by ID.
+
+operation::get-book-by-id[snippets='curl-request,path-parameters,response-fields,http-response,links']
