@@ -22,6 +22,9 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
+
+    <restdocs-openapi.version>0.3.1</restdocs-openapi.version>
+    <restdocs-spec.version>0.6</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
@@ -80,7 +83,7 @@
     <dependency>
       <groupId>com.github.epages-de.restdocs-openapi</groupId>
       <artifactId>restdocs-openapi</artifactId>
-      <version>0.2.9</version>
+      <version>${restdocs-openapi.version}</version>
       <scope>test</scope>
     </dependency>
 
@@ -134,7 +137,7 @@
       <plugin>
         <groupId>com.github.berkleytechnologyservices.restdocs-spec</groupId>
         <artifactId>restdocs-spec-maven-plugin</artifactId>
-        <version>0.5</version>
+        <version>${restdocs-spec.version}</version>
         <executions>
           <execution>
             <goals>
