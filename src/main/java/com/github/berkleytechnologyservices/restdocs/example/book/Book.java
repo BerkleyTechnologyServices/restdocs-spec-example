@@ -33,7 +33,7 @@ public class Book {
   @Column(nullable = false)
   private Integer year;
 
-  @ManyToOne
+  @ManyToOne(optional = false)
   @JoinColumn(nullable = false)
   private Author author;
 
