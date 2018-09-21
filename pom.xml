@@ -23,8 +23,8 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
 
-    <restdocs-openapi.version>0.3.1</restdocs-openapi.version>
-    <restdocs-spec.version>0.6</restdocs-spec.version>
+    <restdocs-openapi.version>0.4.2</restdocs-openapi.version>
+    <restdocs-spec.version>0.7</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
