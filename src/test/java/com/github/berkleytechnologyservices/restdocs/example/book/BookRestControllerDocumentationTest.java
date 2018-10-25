@@ -16,11 +16,10 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.document;
-import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.resourceDetails;
 import static org.mockito.Mockito.when;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;
+import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.document;
 import static org.springframework.restdocs.mockmvc.RestDocumentationRequestBuilders.get;
 import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
 import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
@@ -66,8 +65,6 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-all-books",
-                resourceDetails()
-                    .description("Get all books."),
                 responseFields(
                     subsectionWithPath("_links").ignored()
                 ).andWithPrefix(
@@ -102,8 +99,6 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-books-by-author",
-                resourceDetails()
-                    .description("Get books by author."),
                 requestParameters(
                     parameterWithName("authorId").description("The author's unique identifier.")
                 ),
@@ -137,8 +132,6 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-book-by-id",
-                resourceDetails()
-                    .description("Get a book by ID."),
                 pathParameters(
                     parameterWithName("id").description("The unique identifier of the book.")
                 ),

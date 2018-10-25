@@ -5,12 +5,6 @@ Version {project-version}
 
 Provides services for managing bookstore resources.
 
-== Specification
-
-In addition to the documentation on this page, you can also download a spec file describing the API:
-
-* link:openapi-2.0.yml[Download as OpenAPI 2.0 YAML]
-
 [[resources]]
 == Resources
 
