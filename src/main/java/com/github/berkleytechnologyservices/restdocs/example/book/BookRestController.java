@@ -34,7 +34,7 @@ public class BookRestController {
     return resources;
   }
 
-  @GetMapping(params = "authorId")
+  @GetMapping(path = "/search", params = "authorId")
   public Resources<BookResource> getBooksByAuthor(@RequestParam("authorId") Long authorId) {
     List<BookResource> bookResources = resourceAssembler.toResources(this.repository.findBooksByAuthorId(authorId));
     Resources<BookResource> resources = new Resources<>(bookResources);

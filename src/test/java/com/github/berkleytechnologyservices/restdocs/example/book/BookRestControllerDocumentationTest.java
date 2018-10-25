@@ -97,7 +97,7 @@ public class BookRestControllerDocumentationTest {
 
     when(repository.findBooksByAuthorId(1L)).thenReturn(books);
 
-    this.mvc.perform(get("/book").param("authorId", "1").accept("application/hal+json"))
+    this.mvc.perform(get("/book/search").param("authorId", "1").accept("application/hal+json"))
         .andExpect(status().isOk())
         .andDo(
             document(
