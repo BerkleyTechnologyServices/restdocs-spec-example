@@ -17,6 +17,7 @@ import java.util.List;
 import java.util.Optional;
 
 import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.document;
+import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.resourceDetails;
 import static org.mockito.Mockito.when;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;
@@ -65,7 +66,8 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-all-books",
-                "Get all books.",
+                resourceDetails()
+                    .description("Get all books."),
                 responseFields(
                     subsectionWithPath("_links").ignored()
                 ).andWithPrefix(
@@ -100,9 +102,10 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-books-by-author",
-                "Get books by author.",
+                resourceDetails()
+                    .description("Get books by author."),
                 requestParameters(
-                  parameterWithName("authorId").description("The author's unique identifier.")
+                    parameterWithName("authorId").description("The author's unique identifier.")
                 ),
                 responseFields(
                     subsectionWithPath("_links").ignored()
@@ -134,7 +137,8 @@ public class BookRestControllerDocumentationTest {
         .andDo(
             document(
                 "get-book-by-id",
-                "Get a book by ID.",
+                resourceDetails()
+                    .description("Get a book by ID."),
                 pathParameters(
                     parameterWithName("id").description("The unique identifier of the book.")
                 ),
