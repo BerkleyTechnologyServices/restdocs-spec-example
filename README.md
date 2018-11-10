@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BerkleyTechnologyServices/restdocs-spec-example.svg?branch=master)](https://travis-ci.org/BerkleyTechnologyServices/restdocs-spec-example)
 
-This example project demonstrates how to integrate [Spring REST Docs], [restdocs-openapi], and the 
+This example project demonstrates how to integrate [Spring REST Docs], [restdocs-api-spec], and the 
 [restdocs-spec-maven-plugin] to generate both HTML documentation and an OpenAPI 2.0 spec file at the 
 same time.
 
@@ -33,5 +33,5 @@ following URLs:
 * http://localhost:8080/docs/index.html - HTML documentation 
 
 [Spring REST Docs]: https://spring.io/projects/spring-restdocs
-[restdocs-openapi]: https://github.com/ePages-de/restdocs-openapi
+[restdocs-api-spec]: https://github.com/ePages-de/restdocs-api-spec
 [restdocs-spec-maven-plugin]: https://github.com/BerkleyTechnologyServices/restdocs-spec

@@ -15,8 +15,8 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.document;
-import static com.epages.restdocs.openapi.MockMvcRestDocumentationWrapper.resourceDetails;
+import static com.epages.restdocs.apispec.MockMvcRestDocumentationWrapper.document;
+import static com.epages.restdocs.apispec.MockMvcRestDocumentationWrapper.resourceDetails;
 import static org.mockito.Mockito.when;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.linkWithRel;
 import static org.springframework.restdocs.hypermedia.HypermediaDocumentation.links;

@@ -24,8 +24,8 @@
     <java.version>1.8</java.version>
 
     <asciidoctor.version>1.5.6</asciidoctor.version>
-    <restdocs-openapi.version>0.4.2</restdocs-openapi.version>
-    <restdocs-spec.version>0.8</restdocs-spec.version>
+    <restdocs-api-spec.version>0.5.0</restdocs-api-spec.version>
+    <restdocs-spec.version>0.9</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
@@ -38,6 +38,10 @@
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
     </repository>
+    <repository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com</url>
+    </repository>
   </repositories>
   
   <pluginRepositories>
@@ -48,6 +52,10 @@
     <pluginRepository>
       <id>jitpack.io</id>
       <url>https://jitpack.io</url>
+    </pluginRepository>
+    <pluginRepository>
+      <id>jcenter</id>
+      <url>https://jcenter.bintray.com</url>
     </pluginRepository>
   </pluginRepositories>
 
@@ -82,9 +90,9 @@
     </dependency>
 
     <dependency>
-      <groupId>com.github.epages-de.restdocs-openapi</groupId>
-      <artifactId>restdocs-openapi</artifactId>
-      <version>${restdocs-openapi.version}</version>
+      <groupId>com.epages</groupId>
+      <artifactId>restdocs-api-spec</artifactId>
+      <version>${restdocs-api-spec.version}</version>
       <scope>test</scope>
     </dependency>
 
