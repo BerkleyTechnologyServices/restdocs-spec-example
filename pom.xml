@@ -24,8 +24,8 @@
     <java.version>1.8</java.version>
 
     <asciidoctor.version>1.5.6</asciidoctor.version>
-    <restdocs-api-spec.version>0.5.0</restdocs-api-spec.version>
-    <restdocs-spec.version>0.9</restdocs-spec.version>
+    <restdocs-api-spec.version>0.8.0</restdocs-api-spec.version>
+    <restdocs-spec.version>0.10-SNAPSHOT</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
@@ -43,7 +43,7 @@
       <url>https://jcenter.bintray.com</url>
     </repository>
   </repositories>
-  
+
   <pluginRepositories>
     <pluginRepository>
       <id>central</id>
@@ -92,6 +92,12 @@
     <dependency>
       <groupId>com.epages</groupId>
       <artifactId>restdocs-api-spec</artifactId>
+      <version>${restdocs-api-spec.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.epages</groupId>
+      <artifactId>restdocs-api-spec-mockmvc</artifactId>
       <version>${restdocs-api-spec.version}</version>
       <scope>test</scope>
     </dependency>
@@ -156,6 +162,18 @@
             <configuration>
               <!--suppress MavenModelInspection -->
               <skip>${skipTests}</skip>
+              <name>Book API</name>
+              <description>API for Books and Authors</description>
+              <tagDescriptions>
+                <tag>
+                  <name>author</name>
+                  <description>Author API</description>
+                </tag>
+                <tag>
+                  <name>book</name>
+                  <description>Book API</description>
+                </tag>
+              </tagDescriptions>
               <host>localhost:8080</host>
               <outputDirectory>${project.build.directory}/classes/static/docs</outputDirectory>
             </configuration>
