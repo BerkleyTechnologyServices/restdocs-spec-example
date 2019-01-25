@@ -14,7 +14,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.0.5.RELEASE</version>
+    <version>2.1.2.RELEASE</version>
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
 
@@ -24,8 +24,8 @@
     <java.version>1.8</java.version>
 
     <asciidoctor.version>1.5.6</asciidoctor.version>
-    <restdocs-api-spec.version>0.5.0</restdocs-api-spec.version>
-    <restdocs-spec.version>0.9</restdocs-spec.version>
+    <restdocs-api-spec.version>0.8.0</restdocs-api-spec.version>
+    <restdocs-spec.version>0.10</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
@@ -92,6 +92,13 @@
     <dependency>
       <groupId>com.epages</groupId>
       <artifactId>restdocs-api-spec</artifactId>
+      <version>${restdocs-api-spec.version}</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>com.epages</groupId>
+      <artifactId>restdocs-api-spec-mockmvc</artifactId>
       <version>${restdocs-api-spec.version}</version>
       <scope>test</scope>
     </dependency>
