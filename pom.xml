@@ -24,20 +24,12 @@
     <java.version>1.8</java.version>
 
     <asciidoctor.version>1.5.6</asciidoctor.version>
-    <restdocs-api-spec.version>0.8.0</restdocs-api-spec.version>
-    <restdocs-spec.version>0.10</restdocs-spec.version>
+    <restdocs-api-spec.version>0.9.0</restdocs-api-spec.version>
+    <restdocs-spec.version>0.11</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
   <repositories>
-    <repository>
-      <id>central</id>
-      <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-    <repository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </repository>
     <repository>
       <id>jcenter</id>
       <url>https://jcenter.bintray.com</url>
@@ -45,14 +37,6 @@
   </repositories>
   
   <pluginRepositories>
-    <pluginRepository>
-      <id>central</id>
-      <url>https://repo.maven.apache.org/maven2</url>
-    </pluginRepository>
-    <pluginRepository>
-      <id>jitpack.io</id>
-      <url>https://jitpack.io</url>
-    </pluginRepository>
     <pluginRepository>
       <id>jcenter</id>
       <url>https://jcenter.bintray.com</url>
