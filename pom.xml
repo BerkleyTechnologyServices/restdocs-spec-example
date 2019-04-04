@@ -25,7 +25,7 @@
 
     <asciidoctor.version>1.5.6</asciidoctor.version>
     <restdocs-api-spec.version>0.9.0</restdocs-api-spec.version>
-    <restdocs-spec.version>0.11</restdocs-spec.version>
+    <restdocs-spec.version>0.14</restdocs-spec.version>
   </properties>
 
   <!-- need this here for now since restdocs-openapi-generator is not in central -->
