@@ -14,5 +14,6 @@
   }, {
     "packagePatterns": ["^org.springframework:"],
     "groupName": "springframework"
-  }]
+  }],
+  "prHourlyLimit": 10
 }
