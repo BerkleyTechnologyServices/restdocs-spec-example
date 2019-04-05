@@ -17,7 +17,7 @@ You can build the project with the following command:
 That should produce the following:
 
 * `./target/classes/static/docs/openapi-2.0.yml` - An OpenAPI 2.0 specification file for the API
-* `./target/classes/static/docs/index.hmtl` - The HTML documentation for the API.  This documentation 
+* `./target/classes/static/docs/index.html` - The HTML documentation for the API.  This documentation 
   also includes a link to download the OpenAPI 2.0 specification file mentioned above.
   
 You can also run the sample application with the following command:
