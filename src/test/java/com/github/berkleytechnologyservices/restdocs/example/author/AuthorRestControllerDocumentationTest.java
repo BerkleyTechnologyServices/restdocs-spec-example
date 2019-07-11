@@ -63,7 +63,6 @@ public class AuthorRestControllerDocumentationTest {
                     subsectionWithPath("_links").ignored()
                 ).andWithPrefix(
                     "_embedded.authorList[].",
-
                     fieldWithPath("firstName").description("The author's first name."),
                     fieldWithPath("lastName").description("The author's last name."),
                     subsectionWithPath("_links").ignored()
