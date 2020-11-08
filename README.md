@@ -1,6 +1,6 @@
 # Example using restdocs-spec-maven-plugin
 
-[![Build Status](https://travis-ci.org/BerkleyTechnologyServices/restdocs-spec-example.svg?branch=master)](https://travis-ci.org/BerkleyTechnologyServices/restdocs-spec-example)
+[![Build Status](https://travis-ci.com/BerkleyTechnologyServices/restdocs-spec-example.svg?branch=master)](https://travis-ci.com/BerkleyTechnologyServices/restdocs-spec-example)
 
 This example project demonstrates how to integrate [Spring REST Docs], [restdocs-api-spec], and the 
 [restdocs-spec-maven-plugin] to generate both HTML documentation and an OpenAPI 2.0 spec file at the 
