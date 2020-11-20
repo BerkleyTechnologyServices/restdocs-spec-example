@@ -1,9 +1,9 @@
 # Example using restdocs-spec-maven-plugin
 
-[![Build Status](https://travis-ci.com/BerkleyTechnologyServices/restdocs-spec-example.svg?branch=master)](https://travis-ci.com/BerkleyTechnologyServices/restdocs-spec-example)
+[![Build Status](https://github.com/BerkleyTechnologyServices/restdocs-spec-example/workflows/CI/badge.svg?branch=master&event=push)](https://github.com/BerkleyTechnologyServices/restdocs-spec-example/actions?query=branch%3Amaster+workflow%3ACI)
 
-This example project demonstrates how to integrate [Spring REST Docs], [restdocs-api-spec], and the 
-[restdocs-spec-maven-plugin] to generate both HTML documentation and an OpenAPI 2.0 spec file at the 
+This example project demonstrates how to integrate [Spring REST Docs], [restdocs-api-spec], and the
+[restdocs-spec-maven-plugin] to generate both HTML documentation and an OpenAPI 2.0 spec file at the
 same time.
 
 ## Usage
@@ -17,20 +17,20 @@ You can build the project with the following command:
 That should produce the following:
 
 * `./target/classes/static/docs/openapi-2.0.yml` - An OpenAPI 2.0 specification file for the API
-* `./target/classes/static/docs/index.html` - The HTML documentation for the API.  This documentation 
+* `./target/classes/static/docs/index.html` - The HTML documentation for the API.  This documentation
   also includes a link to download the OpenAPI 2.0 specification file mentioned above.
-  
+
 You can also run the sample application with the following command:
 
 ```sh
 ./mvnw prepare-package spring-boot:run
 ```
 
-After the application has started, open up a web browser and navigate to the documentation at the 
+After the application has started, open up a web browser and navigate to the documentation at the
 following URLs:
 
 * http://localhost:8080/docs/openapi-2.0.yml - OpenAPI 2.0 specification
-* http://localhost:8080/docs/index.html - HTML documentation 
+* http://localhost:8080/docs/index.html - HTML documentation
 
 [Spring REST Docs]: https://spring.io/projects/spring-restdocs
 [restdocs-api-spec]: https://github.com/ePages-de/restdocs-api-spec
