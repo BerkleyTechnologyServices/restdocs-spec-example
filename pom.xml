@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.github.berkleytechnologyservices.restdocs-spec</groupId>
+  <groupId>io.github.berkleytechnologyservices</groupId>
   <artifactId>restdocs-spec-example</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -25,23 +25,8 @@
 
     <asciidoctor.version>2.1.0</asciidoctor.version>
     <restdocs-api-spec.version>0.11.2</restdocs-api-spec.version>
-    <restdocs-spec.version>0.19</restdocs-spec.version>
+    <restdocs-spec.version>0.20</restdocs-spec.version>
   </properties>
-
-  <!-- need this here for now since restdocs-openapi-generator is not in central -->
-  <repositories>
-    <repository>
-      <id>jcenter</id>
-      <url>https://jcenter.bintray.com</url>
-    </repository>
-  </repositories>
-  
-  <pluginRepositories>
-    <pluginRepository>
-      <id>jcenter</id>
-      <url>https://jcenter.bintray.com</url>
-    </pluginRepository>
-  </pluginRepositories>
 
   <dependencies>
     <dependency>
@@ -136,7 +121,7 @@
         </dependencies>
       </plugin>
       <plugin>
-        <groupId>com.github.berkleytechnologyservices.restdocs-spec</groupId>
+        <groupId>io.github.berkleytechnologyservices</groupId>
         <artifactId>restdocs-spec-maven-plugin</artifactId>
         <version>${restdocs-spec.version}</version>
         <executions>
