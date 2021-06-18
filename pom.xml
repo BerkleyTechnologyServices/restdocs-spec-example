@@ -25,7 +25,7 @@
 
     <asciidoctor.version>2.1.0</asciidoctor.version>
     <restdocs-api-spec.version>0.11.4</restdocs-api-spec.version>
-    <restdocs-spec.version>0.20</restdocs-spec.version>
+    <restdocs-spec.version>0.21</restdocs-spec.version>
   </properties>
 
   <dependencies>
