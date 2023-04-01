@@ -8,11 +8,11 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -26,15 +26,15 @@ public class Author {
   @Id
   @GeneratedValue
   @JsonIgnore
-  private final Long id;
+  Long id;
 
   @Column(nullable = false)
-  private final String firstName;
+  String firstName;
 
   @Column(nullable = false)
-  private final String lastName;
+  String lastName;
 
   @OneToMany(mappedBy = "author")
   @JsonIgnore
-  private final Set<Book> books = new HashSet<>();
+  Set<Book> books = new HashSet<>();
 }

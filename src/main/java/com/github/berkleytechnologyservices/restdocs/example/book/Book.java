@@ -8,12 +8,12 @@ import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.ManyToOne;
 
 @Value
 @Entity
@@ -25,16 +25,16 @@ public class Book {
   @Id
   @GeneratedValue
   @JsonIgnore
-  private final Long id;
+  Long id;
 
   @Column(nullable = false)
-  private String title;
+  String title;
 
   @Column(nullable = false)
-  private Integer year;
+  Integer published;
 
   @ManyToOne(optional = false)
   @JoinColumn(nullable = false)
-  private Author author;
+  Author author;
 
 }

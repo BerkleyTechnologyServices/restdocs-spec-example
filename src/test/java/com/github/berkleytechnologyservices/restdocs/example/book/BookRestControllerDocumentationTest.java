@@ -27,7 +27,7 @@ import static org.springframework.restdocs.payload.PayloadDocumentation.response
 import static org.springframework.restdocs.payload.PayloadDocumentation.subsectionWithPath;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
-import static org.springframework.restdocs.request.RequestDocumentation.requestParameters;
+import static org.springframework.restdocs.request.RequestDocumentation.queryParameters;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(SpringExtension.class)
@@ -73,7 +73,7 @@ public class BookRestControllerDocumentationTest {
                 ).andWithPrefix(
                     "_embedded.bookList[].",
                     fieldWithPath("title").description("The title of the book."),
-                    fieldWithPath("year").description("The year the book was published."),
+                    fieldWithPath("published").description("The year the book was published."),
                     fieldWithPath("author.firstName").description("The author's first name."),
                     fieldWithPath("author.lastName").description("The author's last name."),
                     subsectionWithPath("_links").ignored()
@@ -104,7 +104,7 @@ public class BookRestControllerDocumentationTest {
                 "get-books-by-author",
                 resourceDetails()
                     .description("Get books by author."),
-                requestParameters(
+                queryParameters(
                     parameterWithName("authorId").description("The author's unique identifier.")
                 ),
                 responseFields(
@@ -112,7 +112,7 @@ public class BookRestControllerDocumentationTest {
                 ).andWithPrefix(
                     "_embedded.bookList[].",
                     fieldWithPath("title").description("The title of the book."),
-                    fieldWithPath("year").description("The year the book was published."),
+                    fieldWithPath("published").description("The year the book was published."),
                     fieldWithPath("author.firstName").description("The author's first name."),
                     fieldWithPath("author.lastName").description("The author's last name."),
                     subsectionWithPath("_links").ignored()
@@ -144,7 +144,7 @@ public class BookRestControllerDocumentationTest {
                 ),
                 responseFields(
                     fieldWithPath("title").description("The title of the book."),
-                    fieldWithPath("year").description("The year the book was published."),
+                    fieldWithPath("published").description("The year the book was published."),
                     fieldWithPath("author.firstName").description("The author's first name."),
                     fieldWithPath("author.lastName").description("The author's last name."),
                     subsectionWithPath("_links").ignored()
