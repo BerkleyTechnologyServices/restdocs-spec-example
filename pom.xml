@@ -24,7 +24,7 @@
     <java.version>17</java.version>
 
     <asciidoctor.version>2.2.6</asciidoctor.version>
-    <restdocs-api-spec.version>0.19.1</restdocs-api-spec.version>
+    <restdocs-api-spec.version>0.19.2</restdocs-api-spec.version>
     <restdocs-spec.version>0.23</restdocs-spec.version>
   </properties>
 
