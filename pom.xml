@@ -23,7 +23,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>17</java.version>
 
-    <asciidoctor.version>2.2.6</asciidoctor.version>
+    <asciidoctor.version>3.2.0</asciidoctor.version>
     <restdocs-api-spec.version>0.19.4</restdocs-api-spec.version>
     <restdocs-spec.version>0.23</restdocs-spec.version>
   </properties>
